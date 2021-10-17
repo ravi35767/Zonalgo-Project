@@ -16,18 +16,26 @@ export default function RadioButton() {
         name="radio-buttons-group"
       >
         <FormControlLabel
-          value="female"
+          value="RoomOnly"
           control={<Radio />}
           label="Room Only"
         />
         <FormControlLabel
-          value="male"
+          value="Bed-&-Breakfast"
           control={<Radio />}
           label="Bed & Breakfast"
         />
-        <FormControlLabel value="other" control={<Radio />} label="Only Bed" />
-        <FormControlLabel value="other" control={<Radio />} label="Nomeal" />
-        <FormControlLabel value="other" control={<Radio />} label="Breakfast" />
+        <FormControlLabel
+          value="Only-Bed"
+          control={<Radio />}
+          label="Only Bed"
+        />
+        <FormControlLabel value="Nomeal" control={<Radio />} label="Nomeal" />
+        <FormControlLabel
+          value="Breakfast"
+          control={<Radio />}
+          label="Breakfast"
+        />
       </RadioGroup>
     </FormControl>
   );

@@ -1,7 +1,19 @@
 import { FaBeer } from "react-icons/fa";
 import Button from "@mui/material/Button";
+import { useDispatch, useSelector } from "react-redux";
+import { getData } from "../store/middleWears/dataMiddleware";
+import { useEffect } from "react";
 
 function PostsCard() {
+  const dispatch = useDispatch();
+  const items = useSelector(({ data }) => data.items);
+
+  console.log(items);
+
+  useEffect(() => {
+    console.log("app use effect");
+    dispatch(getData());
+  });
   return (
     <>
       <div className="cardContainer mt-3">
