@@ -6,9 +6,9 @@ import { useEffect } from "react";
 
 function PostsCard() {
   const dispatch = useDispatch();
-  const items = useSelector(({ data }) => data.items);
+  // const items = useSelector(({ data }) => data.items);
 
-  console.log(items);
+  // console.log(items);
 
   useEffect(() => {
     console.log("app use effect");
