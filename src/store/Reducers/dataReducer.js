@@ -1,13 +1,15 @@
-// const initialState = {
-//     items: []
-// };
+import data from "../../data.json";
 
-// const dataReducer = (state = initialState, action) => {
-//     switch (action.type) {
-//         case 'SET_DATA':
-//             return { ...state, items: action.payload };
-//         default:
-//             return state;
-//     }
-// };
-// export default dataReducer;
+const initialState = {
+  items: data,
+};
+
+const dataReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case "SET_DATA":
+      return { ...state, items: action.payload };
+    default:
+      return state;
+  }
+};
+export default dataReducer;
